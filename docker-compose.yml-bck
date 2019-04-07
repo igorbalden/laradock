@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 networks:
   frontend:
@@ -333,8 +333,6 @@ services:
         - "${MYSQL_PORT}:3306"
       networks:
         - backend
-      command: 
-        --disable-partition-engine-check
 
 ### Percona ################################################
     percona:

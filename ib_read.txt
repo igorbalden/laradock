@@ -1,0 +1,12 @@
+
+
+"docker-compose up -d" will fail. 
+It tries to start all services declared in docker-compose.yml.
+
+Start only the services needed with
+"docker-compose up -d apache2 mysql phpmyadmin redis workspace"
+or
+"docker-compose up -d apache2 mysql adminer redis workspace"
+or
+"docker-compose up -d nginx mysql phpmyadmin redis workspace"
+or similar.
